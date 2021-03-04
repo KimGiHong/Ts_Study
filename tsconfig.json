@@ -1,0 +1,17 @@
+{
+    "include": [
+        "src/**/*.ts"
+    ],
+    "exclude":[
+        "node_modules"
+    ],
+    "compilerOptions": {
+        "module": "commonjs",
+        "rootDir": "src",
+        "outDir" : "dist",
+        "target" : "es5" 
+    }
+}
+
+// 이처럼 정리하면 src파일 안에있는 ts에서 tsc를 날리면 dist라는 파일이 생성되고 그안에 js파일이 생겨난다.
+// node module을 추가할땐 npm init -y
