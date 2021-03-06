@@ -6,12 +6,16 @@
         "node_modules"
     ],
     "compilerOptions": {
-        "module": "commonjs",
+        "module": "es6",
         "rootDir": "src",
         "outDir" : "dist",
-        "target" : "es5" 
+        "target" : "es5",
+        "sourceMap": true,
+        "removeComments": true,
+        // "noImplicitAny": true
     }
 }
 
 // 이처럼 정리하면 src파일 안에있는 ts에서 tsc를 날리면 dist라는 파일이 생성되고 그안에 js파일이 생겨난다.
 // node module을 추가할땐 npm init -y
+// sourceMap : true 를 추가하면 웹사이트에서 js로 컴파일된던 것이 ts로 표기되게된다
