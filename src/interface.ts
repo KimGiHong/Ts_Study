@@ -24,6 +24,19 @@ interface Cell {  //인터페이스는 행위가 없고 이 3가지 속성 즉 �
 // 인터페이스를 기반으로 코드를 작성하면 좋은점
 // 인터페이스를 사용하는것을 클라이언트
 
+interface SignUp {
+    email: string;
+    id: string;
+    password: string;
+}
+
+function ajaxSignUp(data: SignUp) {
+
+}
+// ajaxSignUp({
+//     email
+// });
+
 interface Piece {
     move(from: Cell, to: Cell): boolean;
 }
